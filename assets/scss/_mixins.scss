@@ -1,0 +1,4 @@
+@mixin container { width: min(calc(100% - 40px), $container); margin-inline: auto; }
+@mixin button-base { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 52px; padding: 0 24px; border-radius: 999px; font-weight: 700; transition: .25s ease; }
+@mixin image-cover { background-size: cover; background-position: center; background-repeat: no-repeat; }
+@mixin focus-ring { outline: 3px solid rgba(18, 97, 160, .22); outline-offset: 3px; }
