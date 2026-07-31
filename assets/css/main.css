@@ -119,16 +119,12 @@ p {
   gap: 11px;
 }
 
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  display: grid;
-  place-items: center;
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
   border-radius: 12px;
-  background: #071b33;
-  color: #ffffff;
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
 }
 
 .brand-copy {
@@ -463,6 +459,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: visible;
 }
 
 .about-image {
