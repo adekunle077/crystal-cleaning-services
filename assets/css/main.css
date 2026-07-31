@@ -453,21 +453,26 @@ p {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 90px;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(40px, 5vw, 80px);
   align-items: center;
 }
 
 .about-visual {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-image {
-  min-height: 600px;
+  width: min(100%, 460px);
+  height: 540px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   border-radius: 28px;
-  background: linear-gradient(145deg, #183a5c, #0a2039);
-  border-color: #315271;
-  color: #9cb8d0;
+  box-shadow: 0 20px 55px rgba(7, 27, 51, .16);
 }
 
 .about-badge {
