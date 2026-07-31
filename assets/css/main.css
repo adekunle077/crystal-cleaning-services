@@ -275,22 +275,27 @@ p {
 
 .hero-trust {
   display: flex;
-  gap: 28px;
+  gap: 24px;
   flex-wrap: wrap;
+  align-items: flex-start;
   padding: 20px 0%;
-  
 }
 
-.hero-trust div {
+.hero-trust > div {
   display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
 }
 
 .hero-trust strong {
+  display: block;
   font-family: "Manrope", sans-serif;
   font-size: .9rem;
 }
 
 .hero-trust span {
+  display: block;
   color: #647184;
   font-size: .78rem;
 }

@@ -47,10 +47,10 @@ p { color: $muted; margin: 0 0 18px; }
 .btn-ghost { border-color: $line; background: $white; }
 .btn-light { background: $white; color: $navy; }
 .btn-outline-light { color: $white; border-color: rgba(255,255,255,.45); }
-.hero-trust { display: flex; gap: 28px; flex-wrap: wrap; }
-.hero-trust div { display: grid; }
-.hero-trust strong { font-family: $display; font-size: .9rem; }
-.hero-trust span { color: $muted; font-size: .78rem; }
+.hero-trust { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+.hero-trust > div { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.hero-trust strong { display: block; font-family: $display; font-size: .9rem; }
+.hero-trust span { display: block; color: $muted; font-size: .78rem; }
 .hero-visual { position: relative; }
 .image-placeholder { display: grid; place-content: center; text-align: center; color: #7990a6; background: linear-gradient(145deg, #dbeaf6, #eef5fa); border: 1px dashed #a8bed0; }
 .image-placeholder span { font-weight: 700; }
