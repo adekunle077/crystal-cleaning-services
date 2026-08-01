@@ -99,7 +99,7 @@ p {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 1000;
   background: rgba(255, 255, 255, .92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(223, 230, 238, .75);
@@ -172,7 +172,7 @@ p {
   transition: .25s ease;
   min-height: 42px;
   padding-inline: 18px;
-  color: #ffffff;
+  color: #1261a0;
   background: #071b33;
 }
 
@@ -766,28 +766,68 @@ p {
 
   .nav-menu {
     position: fixed;
-    inset: 78px 0 0;
-    background: #ffffff;
-    padding: 35px 20px;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(7, 27, 51, 0.98);
+    color: #ffffff;
+    padding: 110px 20px 35px;
     display: none;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
+    box-shadow: 0 18px 40px rgba(7, 27, 51, .20);
+    z-index: 1002;
+    overflow-y: auto;
   }
 
   .nav-menu.open {
     display: flex;
   }
 
+  .nav-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    background: transparent;
+    border: 0;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1010;
+  }
+
+  .nav-close:hover {
+    color: #8fc9ff;
+    background: rgba(255,255,255,0.04);
+    border-radius: 8px;
+  }
+
   .nav-menu a {
     padding: 15px 0;
-    border-bottom: 1px solid #dfe6ee;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+  }
+
+  .nav-menu a:hover {
+    color: #8fc9ff;
+  }
+
+  .nav-menu.open .nav-cta {
+    color: #1261a0;
+    background: #ffffff;
   }
 
   .nav-cta {
     margin-top: 15px;
     text-align: center;
     justify-content: center;
+    background: #ffffff;
+    color: #1261a0;
   }
 
   .hero-grid,

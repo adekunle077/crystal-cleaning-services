@@ -7,6 +7,13 @@ navToggle?.addEventListener('click', () => {
   document.body.classList.toggle('menu-open', open);
 });
 
+const navClose = document.querySelector('.nav-close');
+navClose?.addEventListener('click', () => {
+  navMenu.classList.remove('open');
+  navToggle?.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('menu-open');
+});
+
 document.querySelectorAll('.nav-menu a').forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('open');
